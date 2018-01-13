@@ -169,7 +169,13 @@ public void onClick( View view){
 }
 
 ----------------- 1.send data to another activity (imp) --------
+import android.widgets.EditText;
 
+#in on click btw Intent and startActivity
+  #taking input
+  final EditText <enter text> = (EditText) findViewById(R.id.<input text id >);
+  //input text co
+  String <store input text variable> = <enter text>.getText().toString(); 
 
 
 
