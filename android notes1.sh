@@ -55,6 +55,4 @@ import android.widget.RelativeLayout;
 		RelativeLayout.LayoutParams postionRule = new RelativeLayout.LayoutParams(
 			RelativeLayout.LayoutParams.WRAP_CONNTENT,RelativeLayout.LayoutParams.WRAP_CONNTENT);
 
-		
-
-	}
+		}
