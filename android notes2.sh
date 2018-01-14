@@ -174,12 +174,28 @@ import android.widgets.EditText;
 #in on click btw Intent and startActivity
   #taking input
   final EditText <enter text> = (EditText) findViewById(R.id.<input text id >);
-  //input text co
+  //input text in string
   String <store input text variable> = <enter text>.getText().toString(); 
 
+  //take extra vale in the from of key value pair,
+  //store input text variable (user message)
+  <variable name>.putExtra("<call of info>",<store input text variable>);
+#heandle the funtion in other class
+	input android.widgets.TextView;
+	#in onCreate
+	//data name == where we store the data
+	Bundle <data name> =getIntent().getExtras(); 
+	//the app not creach
+	if(<data name> == null){
+		return;
+	}
+	String <call the info> = <data name>.getString("<call the info>");
+	//new store value == showing in another activity
+	final TextView <new store value> = (TextView) findViewById(R.id.<another activity id name>);
+	<new store value>.setText(<call the info>);
 
-
-
+----------------broadcast intents----------------
+#one project commenicate with 
 
 
 
