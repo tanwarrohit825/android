@@ -195,7 +195,23 @@ import android.widgets.EditText;
 	<new store value>.setText(<call the info>);
 
 ----------------broadcast intents----------------
-#one project commenicate with 
+#one project commenicate with one 
+import android.content.Intent;
+import android.view.View;
+
+#in main activirty
+public void sendOutBroadcast(View view){
+	Intent <variable name> = new Intent();
+	<variable name>.setAction("<name of your java class>.sendbroadcast");
+	//change the android version so we apply this
+	<variable name>.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+	sendbroadcast(i);
+}
+
+
+++++++++++++++++++ make other
+create a new project-> select no activity -> in project -> app -> java -> <our package name> 
+->right click ->new ->other ->
 
 
 
