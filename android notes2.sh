@@ -213,6 +213,15 @@ public void sendOutBroadcast(View view){
 create a new project-> select no activity -> in project -> app -> java -> <our package name> 
 ->right click ->new ->other ->
 
+import android.widget.Toast;
 
+#in onReceive
+Toast.makeText(context,"<write the text>",Toast.LENGTH_LONG).show();
 
-
+#filter the broadcast
+notes:-
+//in->manifests->androidManifest
+//in receiver
+	<intent-filter>
+		<action android:name="<package name>"></action>
+	</intent-filter>
