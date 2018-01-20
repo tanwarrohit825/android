@@ -3,24 +3,6 @@
 
 
 
-    //////--------make button-------/////
-
-#for button
-import android.widget.Button;
-
-#make button
-Button <button name> = new Button(this);
-
-#add text on button
-<button name>.setText("<add taext>");
-
-    ///////------add widgets together ---////
-
-#add widgets meathed called
-<layout name>.addView(<widget name>);
-
-#take main interface or display
-setContentView(<layout name>);
 
 ----------------------------- using color -------------------------
 
@@ -225,3 +207,49 @@ notes:-
 	<intent-filter>
 		<action android:name="<package name>"></action>
 	</intent-filter>
+
+
+------------------ 39. Threads-handler -----------
+import android.view.View;
+import android.widget.TextView;
+import android.os.Handler;
+import android.os.message;
+
+#in main activity
+//make Handler
+	
+	Handler <handler name> = new Handler(){
+		#press Alt+ Insert -> override Methods -> handleMessage
+		//put your cahnge text
+	TextView <text name> = (TextView) findViewById(R.id.<Text id>);
+	<text name>.setText("<enter the text");
+	};
+
+public void <on click name>(View view){
+
+	Runnable < runner variable name> = new Runnable(){
+		//code compleate
+		#in void run
+	//make variable go for future time
+	long  <make variable> = System.currentTimeMillis() + 10000;
+	while(System.currentTimeMillis()< <variable name>){
+		synchronized (this){
+			try{
+				wait(<variable name>-System.currentTimeMillis();)
+			}catch(Exception e){ }
+		}
+	}
+	handler.sendEmptyMessage(0);
+
+	};
+
+	Thread <thread name> = new Thread (<runner variable name>)
+	<thread name>.start();
+
+
+}
+
+
+
+
+
