@@ -13,6 +13,31 @@ EditText <object name> = new EditText(this);
 
 
 
+-------------make button-------------
+
+#for button
+import android.widget.Button;
+
+#make button
+Button <button name> = new Button(this);
+
+#add text on button
+<button name>.setText("<add taext>");
+
+-----------add widgets together --------------
+
+#add widgets meathed called
+<layout name>.addView(<widget name>);
+
+#take main interface or display
+setContentView(<layout name>);
+
+
+
+
+
+
+
 
 
 
