@@ -245,10 +245,7 @@ public void <on click name>(View view){
 
 	Thread <thread name> = new Thread (<runner variable name>)
 	<thread name>.start();
-
-
 }
-
 
 
 

@@ -126,8 +126,7 @@ import andrid.util.TypedValue;
 
 
 
------------------------------------------ event handlinng----------------------------------------
-
+----------------------------------------- event handlinng---------
 
 
 # import for event handling
