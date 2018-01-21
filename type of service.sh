@@ -36,3 +36,31 @@ public class <java class name> extend IntentService{
  Intent <variable name> = new Intent(this,<java class name>.class);
  startSevrice(<variable name>);
 
+-----------------------service -------------
+#right click -> new -> sevice -> service 
+//set  log message
+import android.util.Log;
+
+#in above constructor
+ 	private static final String TAG = "<package name>";
+
+#in onBind service
+return null;
+
+#in <service class> 
+#override method -> onStartCommand and OnDistroy
+	//in OnDistroy
+	Log.i(TAG,"<Your message");
+
+	//in onStartCommand
+	Log.i(TAG,"<TAG message>");
+
+
+
+
+
+
+
+
+
+
