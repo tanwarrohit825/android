@@ -55,6 +55,34 @@ return null;
 	//in onStartCommand
 	Log.i(TAG,"<TAG message>");
 
+	Runnable <Runnable variable> = new Runnable(){
+		@Override
+		public void run (){
+			for(int i =0;i<5;i++){
+				long <time variable> = System.currentTimeMillis() + 5000;
+				while(System.currentTimeMillis() <time variable>){
+					synchronized (this)
+					try{
+						wait(<time variable>-System.currentTimeMillis());
+						Log.i(TAG,"<Enter the tag hear>");
+					}catch(Exception e){ }
+				}
+			}
+		}
+	}
+
+	#Under the OnstartCommend
+	Thread <Thread name> = new Thread(<runner object>);
+	<Thread name>.start();
+	return service.START_STICKY;
+
+
+
+#in onCreate
+Intent <Intent variable> = new Intent (this,<service class name>.class);
+startSevrice(Intent variable);
+
+
 
 
 
