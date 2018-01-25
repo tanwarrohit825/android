@@ -248,7 +248,6 @@ public void <on click name>(View view){
 }
 
 
---------
 
 
 
